@@ -1,2 +1,2 @@
 # Faculdade_ADS
-Repositorio para jornada do curso de Análise e desenvolvimento de sistemas.
+Repositorio para registrar minha jornada do curso de Análise e desenvolvimento de sistemas.
