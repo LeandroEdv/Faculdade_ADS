@@ -1,27 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A viagem dos sonhos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Venha realizar a viagem dos seus sonhos</h1>
+      <nav>
+        <ul>
+          <li>pacotes</li>
+          <li>taxas</li>
+          <li>contatos</li>
+        </ul>
+      </nav>
+      <h1>Venha realizar a viagem dos seus sonhos</h1>
     </header>
     <section>
-        <h2>Conheça nossos pacotes</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia praesentium obcaecati ad dolore, repellendus consequuntur architecto nihil sequi beatae, voluptatibus, ab quam illum deserunt est. Velit minus dolore explicabo sunt!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nulla, provident autem est ipsum eum voluptatibus iusto porro rem alias unde at labore, nisi rerum perspiciatis illo incidunt! Quisquam, at!
-            <br>
-            <br>
-            <a href="https://www.lipsum.com/">Link</a>
-        </p>
-        <hr>
+      <h2>Conheça nossos pacotes</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+        praesentium obcaecati ad dolore, repellendus consequuntur architecto
+        nihil sequi beatae, voluptatibus, ab quam illum deserunt est. Velit
+        minus dolore explicabo sunt! Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Ut nulla, provident autem est ipsum eum voluptatibus
+        iusto porro rem alias unde at labore, nisi rerum perspiciatis illo
+        incidunt! Quisquam, at!
+        <br />
+        <br />
+        <a href="https://www.lipsum.com/">Link</a>
+      </p>
+      <hr />
     </section>
+    <br />
+    <section>
+      <figure>
+        <img src="img/gramado.jpg" alt="ciade cramado" />
+        <figcaption>Gramado</figcaption>
+      </figure>
+      <hr />
+      <video controls width="600">
+        <source src="video/exemplo.mp4" type="video/mp4" />
+        seu navegador não suporta esse vídeo.
+        <a href="video/exemplo.mp4">Clique aqui para baixar</a>
+      </video>
+      <hr />
+    </section>
+    <br />
+    <section>
+      <h2>Contato</h2>
+      <form action="" method="get">
+        <label for="">Nome:</label><br />
+        <input type="text" name="nome" /><br />
+        <br />
+        <label for="">E-mail:</label><br />
+        <input type="email" required name="email" /><br />
+        <br />
+        <label for="">Data de ida</label><br />
+        <input type="date" name="dataIda" /><br />
+        <label for="">Data de volta</label><br />
+        <input type="date" name="dataVolta" /><br />
+        <br />
+        <label for="">Quantidade de pessoas</label><br />
+        <input type="number" name="qtdPessoas" /><br />
+        <br />
+        <label for="">Comentário</label><br />
+        <textarea name="comentario" rows="5" id=""></textarea><br />
+        <button>Salva</button>
+      </form>
+    </section>
+    <br />
+    <section>
+      <h2>Taxas e serviços</h2>
+      <table border="">
+        <caption>
+          Descrição dos serviços e respectivos valores
+        </caption>
+        <thead>
+          <tr>
+            <th>Serviços</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reserva de hotel</td>
+            <td><R1>R$150,00</R1></td>
+          </tr>
+          <tr>
+            <td>Compra de passagens</td>
+            <td>R$110,00</td>
+          </tr>
+          <tr>
+            <td>Alugel de Carros</td>
+            <td>R$100,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
     <footer>
-        <p>Desenvolvido por Leandro Santana</p>
+      <p>Desenvolvido por Leandro Santana</p>
     </footer>
-</body>
+  </body>
 </html>
