@@ -6,6 +6,69 @@
     <title>Cadastro de Reserva</title>
 </head>
 <body>
-    
+    <header>
+        
+    </header>
+    <section>
+        <h2>Faça sua reserva</h2>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados do usuário</legend>
+                <label for="">Nome:</label><br />
+                <input type="text" required name="nome" /><br />
+                <br />
+                <label for="">E-mail:</label><br />
+                <input type="email" required name="email" /><br />
+                <br />
+            </fieldset>
+            <fieldset>
+                <legend for="">Quais serviços deseja Contratar?</legend>
+                <label for="">
+                    <br><input type="checkbox" name="passagens" value="passagens">compra de passagens
+                </label>
+                <label for="">
+                    <br><input type="checkbox" name="hospegam" value="hospedagem">Resesva de hospedagem
+                </label>
+                <label for="">
+                    <br><input type="checkbox" name="veiculos" value="veiculos">Reserva de veiculos
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label for="">
+                    <br><input type="radio" name="formaPagamento" value="cartaoDeCredito">Cartão de credito
+                </label>
+                <label for="">
+                    <br><input type="radio" name="formaPagamento" value="boleto">Boleto bancário
+                </label>
+                <label for="">
+                    <br><input type="radio" name="formaPagamento" value="pix">Pix
+                </label>
+                <br>
+                <hr>
+                <label>Forma de parcelamento</label><br> 
+                <br>
+                <select name="prazoPagamento" id="">
+                    <option value="aVista">A vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x" selected>10x Com juros</option>
+                </select> 
+            </fieldset>
+            <br>
+            <input type="submit" name="btnFormulrio">
+        </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>
+            Desenvolvido por Leandro Santana. <br>
+            Em 07.08.2024 <br>
+            para o Módulo básico de HTML5. <br>
+            Repositório no <a href="https://github.com/LeandroEdv/Faculdade_ADS">Github</a>
+        </p>
+    </footer>
 </body>
 </html>
