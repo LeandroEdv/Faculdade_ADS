@@ -29,3 +29,4 @@ console.log(valores3 + " \n"+ novos)
 var pessoas = ["Eduardo", "maria", "gustavo", "pedro", "jessica"];
 var pessoas2 = pessoas.slice(1,3);
 console.log(pessoas + "\n" + pessoas2)
+
