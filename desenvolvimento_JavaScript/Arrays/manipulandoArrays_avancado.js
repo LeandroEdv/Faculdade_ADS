@@ -32,3 +32,15 @@ console.log(num);
 var nomes = funcionarios.map(pessoa => pessoa.nome);
 
 console.log(nomes)
+
+//reduce 
+
+var newArray = [1,2,3,4,5,45]
+var tot = newArray.reduce(function(total, numero){
+    return total + numero
+},0)
+var tot2 = newArray.reduce((n1,n2) => n1+n2,0);
+console.log(tot2);
+console.log(tot);
+
+
