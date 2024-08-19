@@ -31,6 +31,6 @@ switch(drinkName){
         console.log("Opção invalida, a escolha deve der feita entre: café, leite ou chá.");
         break;
 }
-if(drinkName == "café" || drinkName == "leite" || drinkName == "chá"){
+if(value > 0){
     console.log("A bebida escolhida foi: " + drinkName +" o valor a ser pago é: R$"+ value.toFixed(2));
 }
