@@ -20,3 +20,15 @@ a.forEach(function(valor,indice,array){
     console.log(array[indice])
 })
 
+var des = "";
+var tot = 150;
+
+if (tot > 200){
+
+}else if (tot > 100){
+    des = "A";
+
+}else if(tot > 50){
+    des = "B"
+}
+console.log(des);
