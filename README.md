@@ -30,6 +30,6 @@ Se você tiver dúvidas ou sugestões, entre em contato:
 - **Email:** [leandro.edv@hotmail.com](mailto:leandro.edv@hotmail.com)
 - **LinkedIn:** [Leandro Santana](https://www.linkedin.com/in/leandro-edvan/)
 
----
+----
 
 Obrigado por visitar o repositório! Espero que as informações aqui presentes sejam úteis para seu aprendizado e desenvolvimento na área de Análise e Desenvolvimento de Sistemas.
