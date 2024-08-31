@@ -34,3 +34,17 @@ console.log(frase.trim());
 var num = "1,2,3,4,5,6";
 var arr = num.split(","); // Utiliza a vísgula para identificar o novo elemento do array
 console.log(arr);
+
+//montar uma nova string
+
+var novaString = jogo.substring(12,25);
+console.log(novaString);
+
+var novaFrase = "Olá mundo";
+
+if (novaFrase.startsWith("Olá")){
+    let sub = novaFrase.substring(4,);
+    let novaString = sub.replace("mundo", "pessoal");
+    let novaStringMaiuscula = novaString.toUpperCase();
+    console.log(novaStringMaiuscula)
+}
