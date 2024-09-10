@@ -17,6 +17,10 @@ class SmartPhone extends DispositivoEletronico{
         this.cor = cor;
         this.modelo = modelo;
     }
+    ligar(){
+        console.log("via smart")
+    }
 }
 var s1 = new SmartPhone("sansung","branco","A71")
 console.log(s1);
+s1.ligar()
