@@ -27,6 +27,8 @@ table {
    width: 100%; 
 
 }
-
-
+.carousel-caption h5{
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #303030;
+}
 
