@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando seletor do DOM</h1>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>NodeJS</li>
+    </ul>
+    <div id="conteudo" name="divConteudo" class="mensagem">
+
+    </div>
+    <div name="divConteudo" class="mensagem">
+
+    </div>
+    <div name="divConteudo" class="mensagem"></div>
+
+    </div>
+
+    <span id="novospan" class="novo">Texto no span</span>
+
+    <div class="mensagem">
+
+    </div>
+</body>
+<script>
+    lemento0 = document.getElementsByTagName('li')[0];
+    lemento0.style.color = 'blue';
+    lemento1 = document.getElementsByTagName('li')[1];
+    lemento1.style.background = 'red';
+    lemento2 = document.getElementsByTagName('li')[2];
+    lemento2.innerText = 'SpringBoot';
+
+    ElementoDiv = document.getElementById("conteudo");
+    ElementoDiv.innerHTML = "<p>Estou colocando a tag p dentro da div </p>";
+
+    elementDivName = document.getElementsByName("divConteudo")[1]
+    elementDivName.style.color = 'blue'
+    elementDivName.innerText = "estou colocando um texto"
+    
+    elementoDivClass = document.getElementsByClassName("mensagem")[2]
+    elementoDivClass.innerHTML = "<p>Estou colocando a tag p dentro da div  usando o className</p>";
+
+    elementoSpanClass = document.querySelector("span.novo");
+   // elementoSpanClass = document.querySelector("#novospan"); pegando pelo id
+    elementoSpanClass.style.color = "green"
+
+    elementoSeletor = document.querySelectorAll(".mensagem")[3];
+    elementoSeletor.innerHTML = "<p> texto incluido no querySelectorAll </p>"
+</script>
+</html>
