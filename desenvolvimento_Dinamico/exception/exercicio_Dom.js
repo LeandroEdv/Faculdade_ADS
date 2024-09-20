@@ -1,57 +1,74 @@
-class Funcionario{
-    constructor(nome, idade, cargo){
+class Funcionario {
+    constructor(nome, idade, cargo) {
         this.nome = nome;
         this.idade = idade;
         this.cargo = cargo;
     }
 
-    seApresentar(){
-        console.log("meu nome é: " + this.nome);
-    }
-    trabalhar(){
-        console.log("Funcionario: "+ this.nome +" trabalhando!");
+    seApresentar() {
+        return ("Meu nome é: " + this.nome);
     }
 
-}
-
-class Gerente extends Funcionario{
-    constructor(nome, idade, cargo, departamento){
-    super(nome, idade, cargo);
-    this.departamento = departamento;
-    }
-    gerenciar(){
-        console.log(this.nome + " Gerenciando o departamento: "+ this.departamento);
+    trabalhar() {
+        return("Funcionário: " + this.nome + " trabalhando!");
     }
 }
 
-class Desenvolvedor extends Funcionario{
-    constructor(nome, idade, cargo, linguagem){
-        super(nome, idade, cargo, linguagem);
+class Gerente extends Funcionario {
+    constructor(nome, idade, cargo, departamento) {
+        super(nome, idade, cargo);
+        this.departamento = departamento;
+    }
+
+    gerenciar() {
+        return (this.nome + " gerenciando o departamento: " + this.departamento);
+    }
+}
+
+class Desenvolvedor extends Funcionario {
+    constructor(nome, idade, cargo, linguagem) {
+        super(nome, idade, cargo);
         this.linguagem = linguagem;
     }
-    programar(){
-        console.log("Desenvolvedor " + this.nome +" programando na linguagem: "+ this.linguagem);
+
+    programar() {
+        return("Desenvolvedor " + this.nome + " programando na linguagem: " + this.linguagem);
     }
 }
 
+function receberValores() {
+    try {
+        var nome = document.getElementById("nome").value;
+        var idade = document.getElementById("idade").value;
+        var cargo = document.getElementById("cargo").value;
+        var departamento = document.getElementById("departamento").value;
+        var linguagem = document.getElementById("linguagem").value;
 
-function receberValores(){
+        if (!nome || !idade || !cargo) {
+            throw new Error("Preencha todos os campos obrigatórios: nome, idade e cargo!");
+        }
 
-     var nome = document.getElementById(nome).value;
-    console.log(nome)
-    var idade = document.getElementById(idade);
-    var cargo = document.getElementById(cargo);
-    var departamento = document.getElementById(departamento);
-    var linguagem = document.getElementById(linguagem);
+        if (cargo.toLowerCase() === "gerente") {
+            
+            var gerente = new Gerente(nome, idade, cargo, departamento);
+            gerente.seApresentar();
+            gerente.gerenciar();
+            alert(gerente.seApresentar()+ " \n" + gerente.gerenciar())
+
+        } else if (cargo.toLowerCase() === "desenvolvedor") {
+           
+            var desenvolvedor = new Desenvolvedor(nome, idade, cargo, linguagem);
+            desenvolvedor.seApresentar();
+            desenvolvedor.programar();
+            alert(gerente.seApresentar()+ " \n" + desenvolvedor.programar())
+
+        } else {
+            console.log("Cargo não reconhecido.");
+        }
+
+    } catch (error) {
+        
+        console.error("Erro: ", error.message);
+        alert("Erro: " + error.message);
+    }
 }
-
-
-/*let novoGerente = new Gerente("joão", 35,"gerente geral", "desenvolvimento");
-novoGerente.seApresentar();
-novoGerente.trabalhar();
-novoGerente.gerenciar()
-let novoDev = new Desenvolvedor("pedro",26,"dev-backend","java")
-novoDev.seApresentar();
-novoDev.trabalhar();
-novoDev.programar();
-*/
